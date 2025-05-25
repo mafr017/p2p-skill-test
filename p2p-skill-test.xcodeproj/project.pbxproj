@@ -24,7 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB2509802DE0BA7800A15A7E /* p2p-skill-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "p2p-skill-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2509802DE0BA7800A15A7E /* Skill Test iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skill Test iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2509902DE0BA7900A15A7E /* p2p-skill-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "p2p-skill-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB25099A2DE0BA7900A15A7E /* p2p-skill-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "p2p-skill-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,7 +98,7 @@
 		BB2509812DE0BA7800A15A7E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB2509802DE0BA7800A15A7E /* p2p-skill-test.app */,
+				BB2509802DE0BA7800A15A7E /* Skill Test iOS.app */,
 				BB2509902DE0BA7900A15A7E /* p2p-skill-testTests.xctest */,
 				BB25099A2DE0BA7900A15A7E /* p2p-skill-testUITests.xctest */,
 			);
@@ -127,7 +127,7 @@
 			packageProductDependencies = (
 			);
 			productName = "p2p-skill-test";
-			productReference = BB2509802DE0BA7800A15A7E /* p2p-skill-test.app */;
+			productReference = BB2509802DE0BA7800A15A7E /* Skill Test iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BB25098F2DE0BA7900A15A7E /* p2p-skill-testTests */ = {
@@ -426,7 +426,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madityafr.p2p-skill-test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Skill Test iOS";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,7 +458,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madityafr.p2p-skill-test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Skill Test iOS";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

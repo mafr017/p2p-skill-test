@@ -10,14 +10,14 @@ import SwiftUI
 import CoreBluetooth
 
 struct ContentView: View {
-    @StateObject var bluetoothViewModel = BluetoothLowEnergyViewModel()
+    @StateObject private var bluetoothViewModel = BluetoothLowEnergyViewModel()
     @State var showPopup = false
     
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 10) {
                 List(bluetoothViewModel.peripherals) { peripheral in
-                    NavigationLink(destination: DetailBluetoothView(dataperipheral: peripheral.id)) {
+                    NavigationLink(destination: DetailBluetoothView(peripheralSelected: peripheral, viewModel: bluetoothViewModel)) {
                         VStack(alignment: .leading, spacing: 10) {
                             Text(peripheral.name)
                                 .font(.system(size: 14, weight: .bold))
