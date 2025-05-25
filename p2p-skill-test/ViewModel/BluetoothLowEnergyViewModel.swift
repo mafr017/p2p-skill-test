@@ -35,15 +35,7 @@ class BluetoothLowEnergyViewModel: NSObject, ObservableObject, CBCentralManagerD
         
         let newPeripheral = Peripheral(id: peripheral.identifier, name: peripheral.name ?? "Unknown Device", rssi: RSSI.intValue) // get peripheral data
         
-//        print("peripherals : \(peripheral)\n")
-//        
-//        if !peripherals.contains(where: { $0.id == newPeripheral.id }) { // check if data is not in the list
-//            print("\(newPeripheral.id)")
-//            DispatchQueue.main.async {
-//                self.peripherals.append(newPeripheral)
-//            }
-//        }
-        
+        // check if peripheral not exist theninsert new peripheral into list
         DispatchQueue.main.async {
             if let index = self.peripherals.firstIndex(where: {$0.id == newPeripheral.id}) {
                 self.peripherals.removeAll(where: {$0.id == newPeripheral.id})
@@ -55,13 +47,11 @@ class BluetoothLowEnergyViewModel: NSObject, ObservableObject, CBCentralManagerD
     }
     
     func startScanning() {
-        print("hit a")
         isBluetoothOn = true
         centralManager.scanForPeripherals(withServices: nil, options: nil)
     }
     
     func stopScanning() {
-        print("hit b")
         isBluetoothOn = false
         centralManager.stopScan()
     }
